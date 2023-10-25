@@ -13,4 +13,14 @@ class Team extends Model
         "name",
         'city'
     ];
+    public function localMatches()
+    {
+        return $this->hasMany(Matches::class, 'local_team');
+    }
+
+    // Relationship for matches where this team is the guest team
+    public function guestMatches()
+    {
+        return $this->hasMany(Matches::class, 'guest_team');
+    }
 }
