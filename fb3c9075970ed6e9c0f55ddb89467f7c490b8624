@@ -1,0 +1,53 @@
+[33mcommit 3d2a9492fd70adf5d55787613a4a8ae9a05a4765[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32mfeature/migrations[m[33m)[m
+Author: Pamiralhp <132684622+Pamiralhp@users.noreply.github.com>
+Date:   Tue Oct 24 12:55:42 2023 +0200
+
+    Migrations for Teams and matches
+
+[33mcommit fb3c9075970ed6e9c0f55ddb89467f7c490b8624[m
+Merge: a19df08 5b39e74
+Author: Pamiralhp <132684622+Pamiralhp@users.noreply.github.com>
+Date:   Tue Oct 24 12:16:57 2023 +0200
+
+    Merge pull request #2 from Pamiralhp/featTeamController
+    
+    Feat team controller
+
+[33mcommit 5b39e74b1436e4f028eda9f86d4ab7650dacb11d[m
+Author: Pamiralhp <132684622+Pamiralhp@users.noreply.github.com>
+Date:   Tue Oct 24 12:15:13 2023 +0200
+
+    creation of team controller
+
+[33mcommit 3f5699250b39abf5bce1c4793629e86571075cb1[m
+Merge: 1689260 1fe1223
+Author: Pamiralhp <132684622+Pamiralhp@users.noreply.github.com>
+Date:   Tue Oct 24 11:51:12 2023 +0200
+
+    Merge pull request #1 from Pamiralhp/TeamModel
+    
+    creation of Team model
+
+[33mcommit 1fe1223d1549e4c8f02e50e9b050a1aac8445533[m
+Author: Pamiralhp <132684622+Pamiralhp@users.noreply.github.com>
+Date:   Tue Oct 24 11:50:20 2023 +0200
+
+    creation of Team model
+
+[33mcommit 16892601f61b8656f5e7713dda2962f4f7b9e5c3[m
+Author: Pamiralhp <132684622+Pamiralhp@users.noreply.github.com>
+Date:   Mon Oct 23 12:04:11 2023 +0200
+
+    creation of TeamController
+
+[33mcommit a19df087eb9515d9f6a6b987056091fefa066198[m[33m ([m[1;32mfeatTeam-Model[m[33m)[m
+Author: Pamiralhp <132684622+Pamiralhp@users.noreply.github.com>
+Date:   Mon Oct 23 09:52:59 2023 +0200
+
+    Create-laravel-project
+
+[33mcommit 9ec01b4c99a5f7dd5a32e36702b956c98562fe71[m
+Author: Pamiralhp <132684622+Pamiralhp@users.noreply.github.com>
+Date:   Mon Oct 16 11:37:12 2023 +0200
+
+    Initial commit
