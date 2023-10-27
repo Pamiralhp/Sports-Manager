@@ -2,9 +2,9 @@
 
 @section('content')
     <h2>Edit Game</h2>
-    <form action="{{ route('games.update', $game->id) }}" method="POST">
+    <form action="{{ route('games.update', $game->id) }}">
         @csrf
-        @method('PUT')
+        @method('PATCH')
         <div class="mb-3">
             <label for="local_team" class="form-label">Local Team</label>
             <select id="local_team" name="local_team" class="form-select" tabindex="1">
@@ -21,11 +21,6 @@
                     <option value="{{ $team->id }}" {{ $team->id === $game->guest_team ? 'selected' : '' }}>{{ $team->name }}</option>
                 @endforeach
             </select>
-        </div>
-
-        <div class="mb-3">
-            <label for="city" class="form-label">City</label>
-            <input id="city" name="city" type="text" class="form-control" value="{{ $game->city }}" tabindex="3">
         </div>
 
         <div class="mb-3">

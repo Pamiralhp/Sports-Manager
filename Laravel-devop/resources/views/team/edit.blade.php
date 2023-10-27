@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.layout')
 
 @section('content')
     <h2>Edit Team</h2>
-    <form action="{{ route('teams.update', $team->id) }}" method="POST">
+    <form action="{{ route('teams.update', $team->id) }}">
         @csrf
-        @method('PUT')
+        @method('PATCH')
 
         <div class="mb-3">
             <label for="name" class="form-label">Team Name</label>

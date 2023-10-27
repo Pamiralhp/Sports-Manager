@@ -53,15 +53,6 @@ class GameController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        $game = Game::find($id);
-        return view('game.show', compact('game'));
-    }
-
-    /**
      * Show the form for editing the specified resource.
      */
     public function edit(string $id)
