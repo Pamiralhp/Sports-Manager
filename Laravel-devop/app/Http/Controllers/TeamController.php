@@ -2,29 +2,58 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Team;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use App\Models\Team;
 
 class TeamController extends Controller
 {
- public function index(){
-    $teams = Team::all();
-    return view('team.index', ['teams' => $teams]);
-}
-
-    public function create(){
-        return view('team.create');
+    public function index()
+    {
+        $teams = Team::all();
+        return view('team\index', compact('teams'));
     }
 
-    public function store(Request $request){
-        $data = $request->validate([
-            'name' => 'required|max:20',
-            'city' => 'required|max:20',
-        ]);
+    public function create()
+    {
+        return view('team\create');
+    }
 
-        $team = Team::create($data);
+    public function store(Request $request)
+{
+    $request->validate([
+        'name' => 'required',
+        'city' => 'required',
+    ]);
 
-        return redirect(view('team.index'));
+    $team = new Team;
+    $team->name = $request->name;
+    $team->city = $request->city;
+    $team->save();
+
+    return redirect('teams');
+}
+
+    public function edit($id)
+    {
+        $team = Team::find($id);
+        return view('team.edit', compact('team'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $team = Team::find($id);
+        $team->name = $request->name;
+        $team->city = $request->city;
+        $team->save();
+
+        return redirect()->route('teams.index');
+    }
+
+    public function destroy($id)
+    {
+        $team = Team::find($id);
+        $team->delete();
+
+        return redirect()->route('teams.index');
     }
 }
