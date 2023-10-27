@@ -6,13 +6,13 @@
         @csrf
         @method('PATCH')
 
-        <div class="mb-3">
-            <label for="name" class="form-label">Team Name</label>
+        <div class="mb-4">
+            <label for="name" class="form-label font-bold">Team Name</label>
             <input id="name" name="name" type="text" class="form-control" value="{{ $team->name }}" tabindex="1">
         </div>
 
-        <div class="mb-3">
-            <label for="city" class="form-label">City</label>
+        <div class="mb-4">
+            <label for="city" class="form-label font-bold">City</label>
             <input id="city" name="city" type="text" class="form-control" value="{{ $team->city }}" tabindex="2">
         </div>
 
