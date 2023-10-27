@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Dark Mode */
+/* Example: Style the body background and text color for dark mode */
+
+.dark {
+    --text-color: #F9FAFB;
+}
+.dark h2, .form-label {
+    color: var(--text-color);
+}
+.dark .dark\:bg-gray-900 {
+    background-color: #111827;
+}
